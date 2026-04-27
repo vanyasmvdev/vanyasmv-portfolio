@@ -2,9 +2,9 @@ export const SITE = {
   name: 'Ion Smoleaninov',
   handle: 'vanyasmv',
   url: 'https://vanyasmvdev.com',
-  defaultTitle: 'Ion Smoleaninov — Product-focused Developer',
+  defaultTitle: 'Ion Smoleaninov — Freelance Web Developer in Chișinău',
   defaultDescription:
-    'Portfolio of Ion Smoleaninov (vanyasmv) — I build modern websites and web apps with AI-assisted workflows. Available for freelance.',
+    'Ion Smoleaninov (vanyasmv) builds modern websites, e-commerce stores, and web apps. Based in Chișinău, available worldwide for freelance projects.',
   ogImage: '/api/og',
   twitter: '@vanyasmv',
   locales: ['en', 'ro', 'ru'] as const,

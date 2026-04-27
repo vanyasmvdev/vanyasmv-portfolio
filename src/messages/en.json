@@ -1,0 +1,107 @@
+{
+  "common": {
+    "hello": "Hello"
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "meta": {
+    "siteDescription": "Portfolio of Ion Smoleaninov (vanyasmv) — I build modern websites and web apps with AI-assisted workflows. Available for freelance."
+  },
+  "notFound": {
+    "title": "This page wandered off.",
+    "subhead": "It might have moved, or it never existed. Either way, let's get you back.",
+    "backHome": "Back home",
+    "browseProjects": "or browse projects"
+  },
+  "home": {
+    "hero": {
+      "status": "Available for freelance",
+      "headlineGreeting": "Hi, I'm Ion —",
+      "headlinePart1": "I build",
+      "headlineAccent": "modern",
+      "headlinePart2": "web products.",
+      "subhead": "Product-focused developer based in Chișinău. I combine classic frontend skills with AI-assisted workflows to deliver results faster — without cutting corners.",
+      "ctaPrimary": "See projects",
+      "ctaSecondary": "Get in touch"
+    },
+    "about": {
+      "label": "About",
+      "heading": "Shipping web products that actually work.",
+      "p1": "I'm Ion Smoleaninov — online as vanyasmv. I'm a product-focused developer based in Chișinău, Moldova. My background is e-commerce and small-business websites: I've built and operated a Shopify store that generated real sales, and launched WordPress sites for paying clients.",
+      "p2": "Today I build with a modern frontend stack — React, Next.js, TypeScript, Tailwind — and I lean heavily on AI-assisted workflows (Claude Code, Cursor, v0). This isn't a replacement for skill; it's leverage. It means I ship faster, iterate more, and spend less time on boilerplate.",
+      "p3": "I'm currently building BroMind, an AI companion for honest self-reflection through conversation. And I'm open to freelance work — landing pages, e-commerce stores, small web apps. If you need something built well and shipped quickly, let's talk."
+    },
+    "skills": {
+      "label": "Skills",
+      "heading": "A pragmatic toolkit for shipping.",
+      "categories": {
+        "frontend": "Frontend",
+        "cms": "CMS & E-commerce",
+        "ai": "AI-Assisted Workflow",
+        "tools": "Tools"
+      }
+    },
+    "projects": {
+      "label": "Projects",
+      "heading": "Selected work.",
+      "comingSoon": "More projects coming soon",
+      "visit": "Visit",
+      "caseStudy": "Read case study",
+      "items": {
+        "bromind": {
+          "description": "AI companion for honest self-reflection.",
+          "longDescription": "A minimalist AI companion built for brotherly, honest conversations. Not therapy, not motivation — just a space to think out loud and check in with yourself."
+        }
+      }
+    },
+    "contact": {
+      "label": "Contact",
+      "headingPart1": "Got a project in mind?",
+      "headingAccent": "Let's build it.",
+      "subhead": "Available for freelance projects — landing pages, e-commerce stores, web apps. Reach out by email or socials.",
+      "email": "proecomhub@gmail.com"
+    }
+  },
+  "projects": {
+    "backToProjects": "Back to projects",
+    "visitLive": "Visit live",
+    "viewSource": "View source",
+    "bromind": {
+      "overview": {
+        "label": "Overview",
+        "heading": "What it is.",
+        "p1": "BroMind is a minimalist AI companion built around one idea: an honest, brotherly conversation. It's not therapy and not a motivational coach — it's a calm space to think out loud and check in with yourself.",
+        "p2": "The product is intentionally narrow: a chat interface, daily check-in prompts, and a memory of past sessions. No gamification, no streaks, no dopamine loops. The goal is clarity, not engagement."
+      },
+      "stack": {
+        "label": "Stack",
+        "heading": "Built with."
+      },
+      "decisions": {
+        "label": "Decisions",
+        "heading": "Why these choices.",
+        "openrouter": {
+          "q": "Why OpenRouter instead of calling Anthropic directly?",
+          "a": "OpenRouter gives me one API for multiple models, automatic fallback from Sonnet to Haiku when needed, and the freedom to swap providers later without rewriting code. For a solo project that needs to stay reliable and cheap, that flexibility outweighs going direct."
+        },
+        "sse": {
+          "q": "Why Server-Sent Events instead of WebSockets?",
+          "a": "BroMind only needs one-way streaming: the model talks, the user reads. SSE is one-directional by design, lighter than WebSockets, and supported natively by the ReadableStream API — no extra library, no socket server. The simpler tool wins."
+        },
+        "supabase": {
+          "q": "Why Supabase as the backend?",
+          "a": "Postgres, auth, row-level security, and realtime in one platform. With @supabase/ssr handling cookie-based auth in Next.js, I get a production-grade backend without managing servers. Time saved = features shipped."
+        }
+      },
+      "cta": {
+        "label": "Try it",
+        "heading": "See it in action.",
+        "subhead": "BroMind is live at bromind.app — try a session yourself.",
+        "browseOther": "or browse other projects"
+      }
+    }
+  }
+}

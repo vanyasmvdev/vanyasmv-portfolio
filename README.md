@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# vanyasmv — Personal Portfolio
 
-## Getting Started
+Portfolio site for Ion Smoleaninov.
 
-First, run the development server:
+## Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 16 (App Router) |
+| Language | TypeScript (strict) |
+| Styling | Tailwind CSS v4 |
+| Components | shadcn/ui |
+| i18n | next-intl (en, ro, ru) |
+| Animation | Framer Motion |
+| Icons | lucide-react |
+| Package manager | pnpm |
+
+## Commands
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm dev      # Start development server at http://localhost:3000
+pnpm build    # Production build
+pnpm lint     # Run ESLint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Folder Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+├── app/
+│   └── [locale]/          # i18n-aware routes (en default, ro, ru)
+│       ├── layout.tsx      # Locale layout with fonts, metadata, NextIntlClientProvider
+│       ├── page.tsx        # Home page
+│       └── projects/       # Projects route (coming soon)
+├── components/
+│   ├── ui/                 # shadcn/ui components
+│   ├── sections/           # Page sections (hero, about, etc.)
+│   └── layout/             # Header, Footer, Container, Section
+├── lib/
+│   └── utils.ts            # shadcn cn() utility
+├── i18n/
+│   ├── routing.ts          # Locale routing config
+│   └── request.ts          # Per-request locale resolution
+├── messages/
+│   ├── en.json
+│   ├── ro.json
+│   └── ru.json
+├── content/
+│   └── projects.ts         # Project data
+└── middleware.ts            # next-intl middleware for locale routing
+```

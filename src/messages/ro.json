@@ -1,0 +1,107 @@
+{
+  "common": {
+    "hello": "Bună"
+  },
+  "nav": {
+    "about": "Despre",
+    "projects": "Proiecte",
+    "contact": "Contact"
+  },
+  "meta": {
+    "siteDescription": "Portofoliu Ion Smoleaninov (vanyasmv) — construiesc site-uri și aplicații web moderne cu fluxuri de lucru AI. Disponibil pentru freelance."
+  },
+  "notFound": {
+    "title": "Această pagină s-a rătăcit.",
+    "subhead": "S-ar putea să se fi mutat sau să nu fi existat niciodată. Oricum, te ajut să te întorci.",
+    "backHome": "Înapoi acasă",
+    "browseProjects": "sau explorează proiectele"
+  },
+  "home": {
+    "hero": {
+      "status": "Disponibil pentru freelance",
+      "headlineGreeting": "Bună, sunt Ion —",
+      "headlinePart1": "Construiesc",
+      "headlineAccent": "moderne",
+      "headlinePart2": "produse web.",
+      "subhead": "Developer orientat spre produs, din Chișinău. Combin skills clasice de frontend cu fluxuri de lucru asistate de AI pentru a livra rezultate mai rapid — fără compromisuri.",
+      "ctaPrimary": "Vezi proiecte",
+      "ctaSecondary": "Contactează-mă"
+    },
+    "about": {
+      "label": "Despre",
+      "heading": "Livrând produse web care chiar funcționează.",
+      "p1": "Sunt Ion Smoleaninov — online ca vanyasmv. Sunt un developer orientat spre produs, din Chișinău, Moldova. Experiența mea include e-commerce și site-uri pentru afaceri mici: am construit și gestionat un magazin Shopify cu vânzări reale și am lansat site-uri WordPress pentru clienți plătitori.",
+      "p2": "Astăzi construiesc cu un stack modern de frontend — React, Next.js, TypeScript, Tailwind — și mă bazez mult pe fluxuri de lucru asistate de AI (Claude Code, Cursor, v0). Asta nu înlocuiește competența; este un multiplicator. Înseamnă că livrez mai rapid, iterez mai mult și petrec mai puțin timp pe cod repetitiv.",
+      "p3": "În prezent construiesc BroMind, un companion AI pentru auto-reflecție sinceră prin conversație. Și sunt deschis pentru freelance — pagini de destinație, magazine e-commerce, aplicații web mici. Dacă ai nevoie de ceva construit bine și livrat rapid, să vorbim."
+    },
+    "skills": {
+      "label": "Competențe",
+      "heading": "Un toolkit pragmatic pentru livrare.",
+      "categories": {
+        "frontend": "Frontend",
+        "cms": "CMS & E-commerce",
+        "ai": "Flux de lucru asistat de AI",
+        "tools": "Instrumente"
+      }
+    },
+    "projects": {
+      "label": "Proiecte",
+      "heading": "Lucrări selectate.",
+      "comingSoon": "Mai multe proiecte în curând",
+      "visit": "Vizitează",
+      "caseStudy": "Citește studiul de caz",
+      "items": {
+        "bromind": {
+          "description": "Companion AI pentru auto-reflecție sinceră.",
+          "longDescription": "Un companion AI minimalist construit pentru conversații frățești și sincere. Nu terapie, nu motivație — doar un spațiu de gândire cu voce tare."
+        }
+      }
+    },
+    "contact": {
+      "label": "Contact",
+      "headingPart1": "Ai un proiect în minte?",
+      "headingAccent": "Hai să-l construim.",
+      "subhead": "Disponibil pentru proiecte freelance — pagini de destinație, magazine e-commerce, aplicații web. Contactează-mă prin email sau social media.",
+      "email": "proecomhub@gmail.com"
+    }
+  },
+  "projects": {
+    "backToProjects": "Înapoi la proiecte",
+    "visitLive": "Vizitează live",
+    "viewSource": "Cod sursă",
+    "bromind": {
+      "overview": {
+        "label": "Prezentare",
+        "heading": "Ce este.",
+        "p1": "BroMind este un companion AI minimalist construit în jurul unei singure idei: o conversație sinceră și frățească. Nu este terapie și nici coach motivațional — este un spațiu liniștit pentru a gândi cu voce tare și a te verifica cu tine însuți.",
+        "p2": "Produsul este intenționat restrâns: o interfață de chat, întrebări zilnice de auto-verificare și o memorie a sesiunilor anterioare. Fără gamificare, fără streak-uri, fără bucle dopaminice. Scopul este claritatea, nu engagementul."
+      },
+      "stack": {
+        "label": "Stack",
+        "heading": "Construit cu."
+      },
+      "decisions": {
+        "label": "Decizii",
+        "heading": "De ce aceste alegeri.",
+        "openrouter": {
+          "q": "De ce OpenRouter în loc de a apela Anthropic direct?",
+          "a": "OpenRouter îmi oferă un singur API pentru mai multe modele, fallback automat de la Sonnet la Haiku când e nevoie și libertatea de a schimba provider-ul fără a rescrie codul. Pentru un proiect solo care trebuie să rămână fiabil și ieftin, această flexibilitate depășește beneficiile apelului direct."
+        },
+        "sse": {
+          "q": "De ce Server-Sent Events în loc de WebSockets?",
+          "a": "BroMind are nevoie doar de streaming unidirecțional: modelul vorbește, utilizatorul citește. SSE este unidirecțional prin design, mai ușor decât WebSockets și suportat nativ de API-ul ReadableStream — fără bibliotecă suplimentară, fără server de socket. Instrumentul mai simplu câștigă."
+        },
+        "supabase": {
+          "q": "De ce Supabase ca backend?",
+          "a": "Postgres, autentificare, row-level security și realtime într-o singură platformă. Cu @supabase/ssr care gestionează autentificarea bazată pe cookie-uri în Next.js, obțin un backend de producție fără a gestiona servere. Timp economisit = funcționalități livrate."
+        }
+      },
+      "cta": {
+        "label": "Încearcă-l",
+        "heading": "Vezi-l în acțiune.",
+        "subhead": "BroMind este live pe bromind.app — încearcă o sesiune tu însuți.",
+        "browseOther": "sau explorează alte proiecte"
+      }
+    }
+  }
+}
